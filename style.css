@@ -1,17 +1,176 @@
-h1 {
-    color: purple;
-    display: inline-flex;
-    justify-content: center;
-    
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-ul {
-    display: inline-flex;
+
+h1 {
+    font-size: xx-large;
+}
+
+body {
+    /* background-color: rgb(80, 64, 64); */
+    background-color: black;
+}
+
+.main-header {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style-type: none;
+    padding: 20px;
+    background: black;
+    color: navy;
 }
 
 header {
-    background-color: salmon;
+    display: inline;
+}
+
+#navigation li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0px 60px 10px 0px;
+    font-size: larger;
+}
+
+#navigation a:hover{
+    color: white;
+}
+
+#navigation a {
+    text-decoration: none;
+}
+
+.sub-header {
+    background-image: url(images/blue-background.png);
+    background-size: 100%;
+    display: flex;
+}
+
+#sub-header-image {
+    display: inline-flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 30px;
+    padding: 20px;
+    
+}
+
+#sub-header-text {
+    display: inline-flex;
+    /* align-items: center; */
+    font-size: x-large;
+    color: white;
+    margin-left: 40px;
+    position: relative;
+    top: 130px;
+}
+
+#about-header {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: navy;
+    margin-bottom: 20px;
+    text-decoration:dashed underline;
+}
+
+#about-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#between-about-work {
+    border: 2px dashed navy;
+    background: navy;
+    position: relative;
+    bottom: 20px;
+}
+
+#work-header{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: navy;
+    margin-bottom: 20px;
+    text-decoration: dashed underline;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+#proj-1 {
+    border: thick double #f0f;
+}
+
+#proj-1:hover{
+    box-shadow:
+    0 0 20px white,            
+    -10px 0 20px navy,        
+    10px 0 20px navy; 
+    cursor: pointer;        
+}
+
+
+.contact-section {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-content {
+    margin-left: 200px;
+    /* border-left: thick solid white; */
+}
+
+.contact-info li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0px 250px 10px 0px;
+    margin-left: 150px;
+    font-size: larger;
+    color: white;
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .work-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-header {
+        width: 100%;
+    }
+
+    .work-card {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
 }
