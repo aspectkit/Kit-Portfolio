@@ -19,6 +19,7 @@ body {
     padding: 20px;
     background: black;
     color: navy;
+    width: 100%;
 }
 
 header {
@@ -66,8 +67,8 @@ header {
 }
 
 #about-header {
-    display: flex;
-    justify-content: center;
+
+    text-align: center;
     font-size: 50px;
     color: navy;
     margin-bottom: 20px;
@@ -77,8 +78,9 @@ header {
 #about-text {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
+    text-align: center;
 }
 
 #between-about-work {
@@ -88,48 +90,139 @@ header {
     bottom: 20px;
 }
 
+#between-resume-contact {
+    border: 2px dashed navy;
+    background: navy;
+    position: relative;
+    bottom: 0px;
+}
+
 #work-header{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 50px;
     color: navy;
     margin-bottom: 20px;
     text-decoration: dashed underline;
 }
 
-.card-body{
-    display: flex;
-    justify-content: center;
-}
-
-#proj-1 {
+#proj-1-img{
     border: thick double #f0f;
+    flex-grow: 2;
 }
 
-#proj-1:hover{
+#proj-1-img:hover{
     box-shadow:
     0 0 20px white,            
     -10px 0 20px navy,        
     10px 0 20px navy; 
     cursor: pointer;        
+} 
+
+#proj-2-img{
+    border: thick double #f0f;
+    flex-grow: 1;
 }
 
+#proj-2-img:hover{
+    box-shadow:
+    0 0 20px white,            
+    -10px 0 20px navy,        
+    10px 0 20px navy; 
+    cursor: pointer;        
+} 
+
+#proj-3-img{
+    border: thick double #f0f;
+    flex-grow: 1;
+}
+
+#proj-3-img:hover{
+    box-shadow:
+    0 0 20px white,            
+    -10px 0 20px navy,        
+    10px 0 20px navy; 
+    cursor: pointer;        
+} 
+#proj-4-img{
+    border: thick double #f0f;
+    flex-grow: 1;
+}
+
+#proj-4-img:hover{
+    box-shadow:
+    0 0 20px white,            
+    -10px 0 20px navy,        
+    10px 0 20px navy; 
+    cursor: pointer;        
+} 
+
+
+
+.outer-container {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 110px 110px 200px;
+    padding: 5px;
+}
+
+#proj-1-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#proj-2-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#proj-3-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#proj-4-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+#contact-header {
+    font-size: 50px;
+    color: navy;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    text-decoration: dashed underline;
+}
 
 .contact-section {
     display: flex;
     align-items: flex-end;
 }
 
-.contact-content {
-    margin-left: 200px;
-    /* border-left: thick solid white; */
-}
 
 .contact-info li{
     display: inline-flex;
     justify-content: space-between;
     padding: 0px 250px 10px 0px;
-    margin-left: 150px;
+    margin-left: 230px;
     font-size: larger;
     color: white;
 }
@@ -141,7 +234,7 @@ header {
 }
 
 #content-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 9rem;
 }
 
 footer {
@@ -151,26 +244,16 @@ footer {
     height: 2.5rem;
 }
 
+#horiseon {
+    color: navy;
+}
 
-
-
-
-
-
-@media screen and (min-width: 768px) {
-    .work-card {
-        flex: 0 0 50%;
-        max-width: 50%;
+@media screen and (max-width: 768px){
+    main, #navigation, .outer-container, .contact-section {
+        flex-direction: column;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .main-header {
-        width: 100%;
-    }
 
-    .work-card {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
+
+
