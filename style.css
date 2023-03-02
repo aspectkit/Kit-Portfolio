@@ -1,0 +1,17 @@
+h1 {
+    color: purple;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header {
+    background-color: salmon;
+}
